@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a2882eaf83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Img/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#content">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>Hi, I'm <span>Geo</span><br />from STI College Munoz-Edsa</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Img/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sbt">About Me</h1>
+            <p>
+              Good day, everyone! My name is John Geoffrey Padayao, but you can
+              call me "Geo." I’m currently a 2nd-year student at STI College
+              Munoz, pursuing a Bachelor of Science in Information Technology.
+              I’m passionate about becoming a Software Developer, as it's always
+              been my dream to be a professional programmer. I truly enjoy
+              working in this field because I’m driven to innovate technology
+              and make life easier and more comfortable for people. I’m familiar
+              with several programming languages, including C#, Java, Python,
+              and C++. I’m always eager to learn more and create software that
+              can improve people's daily lives
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links act-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />C#, Java, Python, C++,
+                  JScript
+                </li>
+                <li><span>Database</span><br />SQL</li>
+                <li>
+                  <span>Tools</span><br />Git, Github, Visual Studio, Eclipse
+                </li>
+                <li><span>Mobile Development</span><br />Android Studio</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016-2017</span><br />Apolonio Samson Elementary School
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Sergio Osmena Sr. High School
+                </li>
+                <li>
+                  <span>2022-2023</span><br />Apolonio Samson National High
+                  School
+                </li>
+                <li><span>2024</span><br />STI College Munoz</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>N/A</span><br />N/A</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sbt">My Services</h1>
+        <div class="svl">
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Web Application Development</h2>
+            <p></p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2>Mobile Application Development</h2>
+            <p></p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Custom Software Development</h2>
+            <p></p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-bug"></i>
+            <h2>Software Testing and Debuugging</h2>
+            <p></p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ pf ------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sbt">My Work</h1>
+        <div class="wl">
+          <div class="work">
+            <img src="Img/STI.png" />
+            <div class="layer">
+              <h3>Library Attendance Management System</h3>
+              <p>
+                This Website Application helps manage the Library Attendance
+                <br />
+                more efficiently since this Website Application <br />
+                implements the QR scanner.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- cnt -->
+
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h1 class="sbt">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>zyber271@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>09476164348</p>
+            <div class="soc-icons">
+              <a href="https://www.facebook.com/geoooooozz/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/_swabegeo/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://t.me/Geoooz"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/geoooz
+              "
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="files/JOHN GEOFFREY PADAYAO RESUME.pdf "
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="con-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("act-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("act-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+      }
+
+      function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwfdK2FgvZiHZv_jt-K21Y9E0KSHcpbN38_6GeYdgrFxk41lVP3AaehQgI08ZpuQS4PSQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("'msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
+          (response) => {
+            msg.innerHTML = "Message Sent Succesfully!";
+          }
+        );
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset().catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
